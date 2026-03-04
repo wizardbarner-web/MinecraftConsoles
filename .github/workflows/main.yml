@@ -17,7 +17,7 @@ jobs:
         uses: microsoft/setup-msbuild@v2
 
       - name: Build Solution
-        run: msbuild MinecraftConsoles.sln /p:Configuration=Debug /p:Platform=x64
+        run: msbuild MinecraftConsoles.sln /p:Configuration=Debug /p:Platform=Windows64
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
